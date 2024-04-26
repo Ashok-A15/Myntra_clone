@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "649155236863",
+    "project_id": "myntra-clone-50fc1",
+    "storage_bucket": "myntra-clone-50fc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649155236863:android:036f5274934285ee170dca",
+        "android_client_info": {
+          "package_name": "com.example.myntra_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqqs3gkveedhVvkxd3CKJVmDrbsvd7zOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
