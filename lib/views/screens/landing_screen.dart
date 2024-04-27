@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:myntra_clone/views/screens/New_item_screen.dart';
+import 'package:myntra_clone/views/screens/home_screen.dart';
+import 'package:myntra_clone/views/screens/profile_screen.dart';
+import 'package:myntra_clone/views/screens/stores_screen.dart';
+import 'package:myntra_clone/views/screens/trend_nxt_screen.dart';
 
 class LandingScreen extends StatefulWidget {
   static const String routeName = '/landing-screen';
@@ -9,10 +14,25 @@ class LandingScreen extends StatefulWidget {
 }
 
 class _LandingScreenState extends State<LandingScreen> {
+  int currentPage = 0;
+
+  List<Widget> pages = [
+    HomeScreen(),
+    NewItemScreen(),
+    StoresScreen(),
+    TrendNxtScreen(),
+    ProfileScreen()
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: pages[currentPage],
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (index) {
+          currentPage = index;
+          setState(() {});
+        },
         landscapeLayout: BottomNavigationBarLandscapeLayout.linear,
         type: BottomNavigationBarType.fixed,
         items: [
